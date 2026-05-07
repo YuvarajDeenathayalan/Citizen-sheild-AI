@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Citizen Safety Platform
+  </title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main CSS -->
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <h1>
+      Citizen Safety Platform
+    </h1>
+
+    <p>
+      Real-time alerts and community reporting
+    </p>
+
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <div class="container">
+
+      <!-- TOP GRID -->
+      <div class="top-grid">
+
+        <!-- PROFILE -->
+        <div class="card glass">
+
+          <div class="profile">
+
+            <img
+              src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
+              alt="User profile picture"
+            >
+
+            <div>
+
+              <h2>
+                Welcome Back!
+              </h2>
+
+              <p>
+                Alex Kumar
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- QUICK ACTIONS -->
+        <div class="card glass">
+
+          <h2 class="card-title">
+            ⚡ Quick Actions
+          </h2>
+
+          <div class="quick-actions">
+
+            <button>
+              Report Incident
+            </button>
+
+            <button>
+              File Complaint
+            </button>
+
+            <button>
+              Emergency SOS
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- MAIN WRAPPER -->
+      <div class="main-wrapper">
+
+        <!-- LEFT SIDE -->
+        <div class="main-left">
+
+          <!-- WEATHER -->
+          <div class="card glass">
+
+            <h2 class="card-title">
+              🌦️ Local Weather
+            </h2>
+
+            <div class="weather">
+
+              <p class="temperature">
+                28°C
+              </p>
+
+              <div>
+
+                <strong>
+                  Chennai, IN
+                </strong>
+
+                <p>
+                  Partly Cloudy
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- STATS -->
+          <div class="stats-grid">
+
+            <!-- CARD -->
+            <div class="stat-card glass">
+
+              <h3>
+                Scams Detected
+              </h3>
+
+              <p
+                class="cyan stat-number"
+                data-target="1284"
+              >
+                0
+              </p>
+
+            </div>
+
+            <!-- CARD -->
+            <div class="stat-card glass">
+
+              <h3>
+                Active Complaints
+              </h3>
+
+              <p
+                class="yellow stat-number"
+                data-target="342"
+              >
+                0
+              </p>
+
+            </div>
+
+            <!-- CARD -->
+            <div class="stat-card glass">
+
+              <h3>
+                Resolved Cases
+              </h3>
+
+              <p
+                class="green stat-number"
+                data-target="892"
+              >
+                0
+              </p>
+
+            </div>
+
+            <!-- CARD -->
+            <div class="stat-card glass">
+
+              <h3>
+                Emergency Alerts
+              </h3>
+
+              <p
+                class="red stat-number"
+                data-target="16"
+              >
+                0
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- MAIN GRID -->
+          <div class="main-grid">
+
+            <!-- LEFT SIDE -->
+            <div>
+
+              <!-- SCAM DETECTION -->
+              <div class="card glass">
+
+                <h2 class="card-title">
+                  🚨 Scam Detection AI
+                </h2>
+
+                <!-- TEXTAREA -->
+                <textarea
+                  id="scamInput"
+                  placeholder="Paste suspicious message here..."
+                ></textarea>
+
+                <!-- BUTTON -->
+                <button onclick="detectScam()">
+                  Analyze Message
+                </button>
+
+                <!-- RESULT -->
+                <div
+                  id="result"
+                  class="result-box"
+                  style="margin-top:20px;"
+                >
+
+                  AI result will appear here...
+
+                </div>
+
+              </div>
+
+              <!-- RECENT COMPLAINTS -->
+              <div
+                class="card glass"
+                style="margin-top:25px;"
+              >
+
+                <h2 class="card-title">
+                  📝 Recent Complaints
+                </h2>
+
+                <!-- COMPLAINT -->
+                <div class="complaint-box">
+
+                  <div>
+
+                    <strong>
+                      Illegal Dumping
+                    </strong>
+
+                    <p>
+                      Chennai
+                    </p>
+
+                  </div>
+
+                  <span class="yellow">
+                    In Progress
+                  </span>
+
+                </div>
+
+                <!-- COMPLAINT -->
+                <div class="complaint-box">
+
+                  <div>
+
+                    <strong>
+                      Noise Complaint
+                    </strong>
+
+                    <p>
+                      Bangalore
+                    </p>
+
+                  </div>
+
+                  <span class="red">
+                    Rejected
+                  </span>
+
+                </div>
+
+                <!-- COMPLAINT -->
+                <div class="complaint-box">
+
+                  <div>
+
+                    <strong>
+                      Water Leakage
+                    </strong>
+
+                    <p>
+                      Madurai
+                    </p>
+
+                  </div>
+
+                  <span class="green">
+                    Resolved
+                  </span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div>
+
+              <!-- ALERTS -->
+              <div class="card glass">
+
+                <h2 class="card-title">
+                  📢 Live Safety Alerts
+                </h2>
+
+                <!-- ALERT -->
+                <div class="alert-box alert-red">
+
+                  <strong>
+                    Phishing Scam Spike
+                  </strong>
+
+                  <p>
+                    Multiple fake bank SMS campaigns detected.
+                  </p>
+
+                </div>
+
+                <!-- ALERT -->
+                <div class="alert-box alert-yellow">
+
+                  <strong>
+                    Flood Warning
+                  </strong>
+
+                  <p>
+                    Heavy rainfall expected in coastal areas.
+                  </p>
+
+                </div>
+
+              </div>
+
+              <!-- MAP -->
+              <div
+                class="card glass"
+                style="margin-top:25px;"
+              >
+
+                <h2 class="card-title">
+                  🗺️ Live Incident Map
+                </h2>
+
+                <p style="text-align:center;">
+                  Map Placeholder
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT SIDE (NEWS) -->
+        <div class="main-right">
+
+          <div class="card glass">
+
+            <h2 class="card-title">
+              📰 Latest News
+            </h2>
+
+            <div class="news-grid">
+
+              <!-- NEWS ITEM -->
+              <div class="news-item">
+                New cybercrime wing launched in Delhi
+              </div>
+
+              <!-- NEWS ITEM -->
+              <div class="news-item">
+                Govt issues warning on new malware strain
+              </div>
+
+              <!-- NEWS ITEM -->
+              <div class="news-item">
+                Community policing initiatives show success
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

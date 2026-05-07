@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Login - Citizen Safety Platform
+  </title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main CSS -->
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+
+    <h1>
+      Citizen Safety Platform
+    </h1>
+
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <div class="container">
+
+      <div
+        class="card glass"
+        style="max-width:400px; margin: 50px auto;"
+      >
+
+        <h2 class="card-title">
+          🔐 Login
+        </h2>
+
+        <!-- USERNAME -->
+        <input
+          type="text"
+          id="username"
+          placeholder="Username"
+          style="margin-bottom:15px;"
+        >
+
+        <!-- PASSWORD -->
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          style="margin-bottom:20px;"
+        >
+
+        <!-- BUTTON -->
+        <button onclick="login()">
+          Login
+        </button>
+
+        <!-- RESULT -->
+        <div
+          id="result"
+          class="result-box"
+          style="margin-top:20px;"
+        >
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="login.js"></script>
+
+</body>
+
+</html>
